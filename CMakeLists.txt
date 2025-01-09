@@ -118,7 +118,7 @@ if (UNIX AND (NOT APPLE))
     endif()
 endif()
 
-SET(Boost_USE_STATIC_LIBS ON)
+# SET(Boost_USE_STATIC_LIBS ON)
 find_package(Boost 1.69.0 COMPONENTS log_setup log REQUIRED)
 message(STATUS "Boost library path: ${Boost_LIBRARY_DIRS}")
 message(STATUS "Boost include path: ${Boost_INCLUDE_DIR}")
